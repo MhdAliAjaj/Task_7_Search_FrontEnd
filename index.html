@@ -11,6 +11,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./Assets/Styles/style.css">
   </head>
 
   <body>
@@ -33,8 +34,12 @@
           <input type="text" class="form-control handle" />
         </div>
       </div>
-      <button class="btn btn-primary my-5 add-new-button">Add new row</button>
-      <button class="btn btn-info my-5 save-after-update d-none">Save</button>
+      <div class="containerButton">
+        <button class="btn btn-primary my-5 add-new-button">Add new row</button>
+        <button class="btn btn-info my-5 save-after-update d-none">Save</button>
+        <input type="search" onkeyup="searchData(this.value)" name="search_input" class="search_input">
+      </div>
+      
 
       <table class="table table-bordered">
         <thead>
@@ -55,6 +60,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./script.js"></script>
+    <script src="./Assets/Scripts/script.js"></script>
   </body>
 </html>
